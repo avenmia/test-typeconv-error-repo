@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Converted from types.yaml with typeconv
+  version: '3'
+paths: {}
+$id: types.yaml
+$comment: >-
+  Generated from test-func\types.ts by core-types-json-schema
+  (https://github.com/grantila/core-types-json-schema) on behalf of typeconv
+  (https://github.com/grantila/typeconv)
+components:
+  schemas:
+    Book:
+      properties:
+        title:
+          type: string
+        author:
+          type: string
+        genre:
+          anyOf:
+            - const: Comedy
+              type: string
+            - const: Horror
+              type: string
+            - const: Romance
+              type: string
+      required:
+        - title
+        - author
+        - genre
+      additionalProperties: false
+      description: "@swagger components:\r\n  schemas:\r\n    Book:\r\n      type: object\r\n      description: A book.\r\n      properties:\r\n        title:\r\n          type: string\r\n        author:\r\n          type: string\r\n        genre:\r\n          type: string"
+      type: object
